@@ -3,12 +3,14 @@
     font-weight: bold
 }
 
-.paragraph-container{
-    /* font-size: 1.1rem; */
-    /* font-weight: 500; */
-}
-
 .header{
     color: white;
 }
 
+
+@media(max-width :414px){
+
+    .header{
+        font-size:1.25rem;
+    }
+}

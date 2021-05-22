@@ -3,7 +3,6 @@ let overall = 0;
 
 window.addEventListener('load', () => {
     overall = parseFloat(sessionStorage.getItem("Overall2"));
-    sessionStorage.removeItem("Overall2");
 })
 
 
@@ -20,7 +19,6 @@ function handleSubmitCT() {
         ct = parseFloat(ct).toFixed(2);
         overall = parseFloat(overall).toFixed(2);
 
-        sessionStorage.setItem("Ct", ct);
         sessionStorage.setItem("Overall3", overall);
     } catch (error) {
         console.log(error);

@@ -4,10 +4,6 @@ let sf = 0;
 let rq = 0;
 
 overall = parseFloat(sessionStorage.getItem("Overall3"));
-rq = parseFloat(sessionStorage.getItem("Rq"));
-sf = parseFloat(sessionStorage.getItem("Sf"));
-ct = parseFloat(sessionStorage.getItem("Ct"));
-sessionStorage.clear();
 
 let headerOverall = document.querySelector("#score");
 let qrParagraph = document.querySelector("#qrParagraph");
@@ -30,4 +26,8 @@ else if (overall > 0 && overall <= 0.5) {
 else if (overall <= 0) {
     qrParagraph.textContent = "Have dicipline yourself to recite Quran daily, with tadabbur and must refer to Ustaz for proper pronounciation. If found hard to understand certain subject learn, add more recitation of verses.";
     fcParagraph.textContent = "Must not skip breakfast. Must consume sunnah food (raisins, dates, nuts & seeds, honey and sufficient of 8 glasses of clean plain water). Must avoid taking food with high cholestrol and fat."
+}
+
+function handleSubmitResult() {
+    window.location.replace("index.html");
 }

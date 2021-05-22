@@ -2,10 +2,8 @@ let overall = 0;
 
 window.addEventListener('load', () => {
     overall = parseFloat(sessionStorage.getItem("Overall"));
-    sessionStorage.removeItem("Overall");
 })
 
-window.addEventListener('beforeunload', preventUser);
 
 function handleSubmitSF() {
     let arrLogit = [1.2, 1.1, 0.7, 0.6, 0.6, 0.5, 0.4, 0.4, 0.2];
@@ -18,7 +16,6 @@ function handleSubmitSF() {
             overall += (((scale * arrLogit[i]) / 18) * 2);
         }
         sessionStorage.setItem("Overall2", overall);
-        sessionStorage.setItem("Sf", sf);
     } catch (error) {
         console.log(error);
     }

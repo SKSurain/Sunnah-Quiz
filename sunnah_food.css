@@ -14,3 +14,32 @@
     .header{
         color: white;
     }
+
+    
+    @media(max-width :414px){
+
+        .header{
+            font-size:1.25rem;
+        }
+
+        .radio-container{
+            font-size:0.8rem;
+            margin-left: 25px;
+        }
+        .first-radio-container{
+            font-size:0.8rem;
+        }
+        .paragraph-container{
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        #partHeader{
+            font-size:1.2rem;
+        }
+
+        #descParagraph{
+         font-size: 0.8rem;   
+        }
+
+    }
