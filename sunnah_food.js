@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
     sessionStorage.removeItem("Overall");
 })
 
+window.addEventListener('beforeunload', preventUser);
 
 function handleSubmitSF() {
     let arrLogit = [1.2, 1.1, 0.7, 0.6, 0.6, 0.5, 0.4, 0.4, 0.2];
