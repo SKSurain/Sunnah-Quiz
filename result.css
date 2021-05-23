@@ -1,16 +1,44 @@
-.good-score{
+#overallScore{
     color : rgb(12, 173, 43  );
-    font-weight: bold
+    font-weight: bold;
+    font-size: 1.1rem;
 }
-
+#boldedOverall{
+    font-size: 1.09rem;
+}
+.category-column{
+    font-weight:500;
+    border: 1px solid rgba(129, 129, 129, 0.486);
+}
+.category-column-header{
+    font-weight: bold;
+    font-size: 1.0rem;
+    border: 1px solid rgba(129, 129, 129, 0.486);
+    border-bottom: none;
+}
 .header{
     color: white;
 }
-
+#overallText{
+    font-size:1rem;
+    font-weight: bold;
+}
+#highestCategoryText{
+    font-size:larger;
+    font-weight: bold;
+}
 
 @media(max-width :414px){
 
     .header{
         font-size:1.25rem;
+    }
+    .category-column-header{
+        font-size: 0.90rem;
+    }
+
+    .category-column{
+        font-weight:500;
+        font-size: 0.75rem;
     }
 }

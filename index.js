@@ -12,6 +12,7 @@ function handleSubmit() {
             overall += (((scale * arrLogit[i]) / 18) * 2);
         }
         sessionStorage.setItem("Overall", overall);
+        sessionStorage.setItem("Rq", rq);
     } catch (error) {
         console.log(error);
     }

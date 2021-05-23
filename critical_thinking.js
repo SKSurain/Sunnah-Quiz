@@ -20,6 +20,7 @@ function handleSubmitCT() {
         overall = parseFloat(overall).toFixed(2);
 
         sessionStorage.setItem("Overall3", overall);
+        sessionStorage.setItem("Ct", ct);
     } catch (error) {
         console.log(error);
     }

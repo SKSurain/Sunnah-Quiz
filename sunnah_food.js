@@ -16,6 +16,7 @@ function handleSubmitSF() {
             overall += (((scale * arrLogit[i]) / 18) * 2);
         }
         sessionStorage.setItem("Overall2", overall);
+        sessionStorage.setItem("Sf", sf);
     } catch (error) {
         console.log(error);
     }
