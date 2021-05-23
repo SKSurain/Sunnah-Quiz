@@ -4,7 +4,6 @@ window.addEventListener('load', () => {
     overall = parseFloat(sessionStorage.getItem("Overall"));
 })
 
-
 function handleSubmitSF() {
     let arrLogit = [1.2, 1.1, 0.7, 0.6, 0.6, 0.5, 0.4, 0.4, 0.2];
     let scale = 0;

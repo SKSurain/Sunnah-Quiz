@@ -1,10 +1,7 @@
 #overallScore{
     color : rgb(12, 173, 43  );
     font-weight: bold;
-    font-size: 1.1rem;
-}
-#boldedOverall{
-    font-size: 1.09rem;
+    font-size: 1.5rem;
 }
 .category-column{
     font-weight:500;
@@ -20,25 +17,41 @@
     color: white;
 }
 #overallText{
-    font-size:1rem;
+    font-size:1.5rem;
     font-weight: bold;
 }
 #highestCategoryText{
-    font-size:larger;
+    font: size 1rem;;
     font-weight: bold;
 }
 
 @media(max-width :414px){
-
     .header{
         font-size:1.25rem;
     }
     .category-column-header{
         font-size: 0.90rem;
     }
-
     .category-column{
         font-weight:500;
         font-size: 0.75rem;
+    }
+    #overallText{
+        font-size:1.1rem;
+        font-weight: bold;
+    }
+    #overallScore{
+        color : rgb(12, 173, 43  );
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    #highestCategoryMainText{
+        font-size: 0.9rem;
+    }
+    #fcParagraph{
+        font-size: 0.9rem;
+    }
+    #qrParagraph{
+        font-size: 0.9rem;
     }
 }

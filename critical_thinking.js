@@ -1,10 +1,8 @@
 let overall = 0;
 
-
 window.addEventListener('load', () => {
     overall = parseFloat(sessionStorage.getItem("Overall2"));
 })
-
 
 function handleSubmitCT() {
     let arrLogit = [0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.1, -0.1, -0.2, -0.4, -0.5];
@@ -16,7 +14,6 @@ function handleSubmitCT() {
             ct += (((scale * arrLogit[i]) / 2) * 2);
             overall += (((scale * arrLogit[i]) / 18) * 2);
         }
-        ct = parseFloat(ct).toFixed(2);
         overall = parseFloat(overall).toFixed(2);
 
         sessionStorage.setItem("Overall3", overall);
